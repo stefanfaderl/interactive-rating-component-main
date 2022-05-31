@@ -1,0 +1,86 @@
+/* 
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+/* Mobile first workflow */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+$primary-color: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+@mixin backgroundCircle($width, $height, $padding: none) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 21%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Overpass;
+  font-weight: 400;
+  color: $MediumGrey;
+  background-color: $VeryDarkBlue;
+}
+
+h1 {
+  font-size: 20px;
+  color: $White;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.content-wrapper {
+  padding: 80px 20px;
+}
+
+.container {
+  background-color: $DarkBlue;
+  border-radius: 20px;
+  padding: 20px;
+  .img-star {
+    @include backgroundCircle(none, none, 10px);
+    margin-bottom: 10px;
+  }
+  [type="submit"] {
+    color: $White;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    min-width: 100%;
+    background-color: $primary-color;
+    padding: 12px 0px;
+  }
+}
+
+.rating-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  & button {
+    color: $MediumGrey;
+    @include backgroundCircle(35px, 35px);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

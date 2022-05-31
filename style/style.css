@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* 
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+/* Mobile first workflow */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Overpass;
+  font-weight: 400;
+  color: hsl(216deg, 12%, 54%);
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+h1 {
+  font-size: 20px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.content-wrapper {
+  padding: 80px 20px;
+}
+
+.container {
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 20px;
+  padding: 20px;
+}
+.container .img-star {
+  width: none;
+  height: none;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 21%);
+  margin-bottom: 10px;
+}
+.container [type=submit] {
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  min-width: 100%;
+  background-color: hsl(25deg, 97%, 53%);
+  padding: 12px 0px;
+}
+
+.rating-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.rating-item button {
+  color: hsl(216deg, 12%, 54%);
+  width: 35px;
+  height: 35px;
+  padding: none;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 21%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
