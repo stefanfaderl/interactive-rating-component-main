@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/* 
-<!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
 /* Mobile first workflow */
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 * {
@@ -38,6 +35,34 @@ p {
   margin-bottom: 20px;
 }
 
+.centerText {
+  text-align: center;
+}
+
+.centerElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankYouIllustration {
+  margin: 10px 0px 25px 0px;
+}
+
+.primaryColor {
+  width: none;
+  height: none;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 50px;
+  color: hsl(216deg, 12%, 54%);
+  background-color: hsl(213deg, 19%, 21%);
+  color: hsl(25deg, 97%, 53%);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
 button {
   cursor: pointer;
 }
@@ -56,7 +81,7 @@ button {
   height: none;
   padding: 12px;
   border: none;
-  border-radius: 50%;
+  border-radius: 50px;
   color: hsl(216deg, 12%, 54%);
   background-color: hsl(213deg, 19%, 21%);
   margin-bottom: 10px;
@@ -86,7 +111,7 @@ button {
   height: 40px;
   padding: none;
   border: none;
-  border-radius: 50%;
+  border-radius: 50px;
   color: hsl(216deg, 12%, 54%);
   background-color: hsl(213deg, 19%, 21%);
 }
