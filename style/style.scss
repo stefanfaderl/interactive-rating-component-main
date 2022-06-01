@@ -1,5 +1,3 @@
-/* 
-<!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
 /* Mobile first workflow */
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
@@ -15,7 +13,8 @@ $VeryDarkBlue: hsl(216, 12%, 8%);
   height: $height;
   padding: $padding;
   border: none;
-  border-radius: 50%;
+  border-radius: 50px;
+  color: $MediumGrey;
   background-color: hsl(213, 19%, 21%);
 }
 
@@ -25,11 +24,22 @@ $VeryDarkBlue: hsl(216, 12%, 8%);
   padding: 0px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Overpass;
   font-weight: 400;
   color: $MediumGrey;
   background-color: $VeryDarkBlue;
+}
+
+main {
+  margin: auto 0;
 }
 
 h1 {
@@ -40,19 +50,43 @@ h1 {
 
 p {
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.centerElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankYouIllustration {
+  margin: 10px 0px 25px 0px;
+}
+
+.primaryColor {
+  @include backgroundCircle(none, none, 7px 12px);
+  color: $primary-color;
+  max-width: fit-content;
+}
+
+button {
+  cursor: pointer;
 }
 
 .content-wrapper {
-  padding: 80px 20px;
+  padding: 0px 20px;
 }
 
 .container {
   background-color: $DarkBlue;
   border-radius: 20px;
-  padding: 20px;
+  padding: 25px;
   .img-star {
-    @include backgroundCircle(none, none, 10px);
+    @include backgroundCircle(none, none, 12px);
     margin-bottom: 10px;
   }
   [type="submit"] {
@@ -63,24 +97,60 @@ p {
     min-width: 100%;
     background-color: $primary-color;
     padding: 12px 0px;
+    &:hover {
+      background-color: $White;
+      color: $primary-color;
+    }
   }
 }
 
 .rating-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   & button {
-    color: $MediumGrey;
-    @include backgroundCircle(35px, 35px);
+    font-weight: 700;
+    @include backgroundCircle(40px, 40px, none);
+    &:hover {
+      color: $White;
+      background-color: $primary-color;
+    }
+    &:focus {
+      color: $White;
+      background-color: hsl(217, 12%, 63%);
+    }
   }
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  //margin-top: auto;
+  padding: 40px 0px;
+  width: 100%;
+  background-color: $DarkBlue;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  a {
+    color: $primary-color;
+  }
+}
+
+/**** Start media queries ****/
+/* 
+Breakpoints:
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+*/
+
+@media screen and (min-width: 400px) {
+  .content-wrapper {
+    margin: 0 auto;
+    max-width: 420px;
+  }
 }
