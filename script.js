@@ -5,7 +5,7 @@ const submitButton = document.querySelector('button[type="submit"]');
 const ratingItems = document.querySelector(".rating-item");
 const image = document.querySelector(".img-star");
 const textItem = document.querySelector(".text-item");
-const h2 = document.querySelector("h2");
+const h1 = document.querySelector("h1");
 const pTag = document.querySelector("p");
 const newEl = document.createElement("p");
 const container = document.querySelector(".container");
@@ -32,7 +32,7 @@ const pressedSubmit = () => {
   ratingItems.remove();
   image.remove();
   textItem.classList.add("centerText");
-  h2.innerText = "Thank you!";
+  h1.innerText = "Thank you!";
   pTag.innerText = `We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!`;
   newEl.innerText = `You selected ${choosenNumber} out of 5`;
   container.classList.add("centerElements");
