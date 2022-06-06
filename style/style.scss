@@ -5,7 +5,7 @@ $primary-color: hsl(25, 97%, 53%);
 $White: hsl(0, 0%, 100%);
 $LightGrey: hsl(217, 12%, 63%);
 $MediumGrey: hsl(216, 12%, 54%);
-$DarkBlue: hsl(213, 19%, 18%);
+$DarkBlue: #1f2630;
 $VeryDarkBlue: hsl(216, 12%, 8%);
 
 @mixin backgroundCircle($width, $height, $padding: none) {
@@ -88,7 +88,7 @@ button {
   padding: 25px;
   .img-star {
     @include backgroundCircle(none, none, 12px);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   [type="submit"] {
     color: $White;

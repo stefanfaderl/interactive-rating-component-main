@@ -73,7 +73,7 @@ button {
 }
 
 .container {
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: #1f2630;
   border-radius: 20px;
   padding: 25px;
 }
@@ -85,7 +85,7 @@ button {
   border-radius: 50px;
   color: hsl(216deg, 12%, 54%);
   background-color: hsl(213deg, 19%, 21%);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .container [type=submit] {
   color: hsl(0deg, 0%, 100%);
@@ -128,7 +128,7 @@ button {
 footer {
   padding: 40px 10px;
   width: 100%;
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: #1f2630;
 }
 
 .attribution {
